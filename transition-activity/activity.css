@@ -1,5 +1,22 @@
 /*Start Color, Transition Time*/
+/* Position & z-index */
 button {
+    position: relative;
+    z-index: 1;
     background-color: ghostwhite;
     transition-duration: 2s;
 }
+/*Moving text content: new bg color, formatting, transition info */
+#caption_overlay {
+    text-align: left;
+    position: absolute;
+    color: white;
+    width: 50%;
+    margin-left: 170px;
+    top: 750px;
+    transition: transform 2s ease-in-out;
+}
+/* Overlay function */
+.caption:hover > #caption_overlay {
+    transform: translateY(-675px);
+ }
